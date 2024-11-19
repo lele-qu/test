@@ -19,7 +19,6 @@ struct LocalStorageCase02 {
           .width(20)
           .aspectRatio(1)
           .onClick(() => {
-            // TODO:页面跳转
             router.pushUrl({
               url: 'pages/10/LocalStorageCase01'
             })
@@ -30,7 +29,6 @@ struct LocalStorageCase02 {
           .textAlign(TextAlign.Center)
         Text('确定')
           .onClick(() => {
-            // TODO:页面跳转
           })
       }.width('100%')
       .padding(20)
