@@ -1,0 +1,95 @@
+@Component
+struct miaoSha {
+  build() {
+    Row(){
+      Column({space:8}){
+        Image($r('app.media.miaosha'))
+          .width(70)
+          .height(14)
+        Text('限时低价')
+          .fontColor('#fff')
+          .fontSize(14)
+        Row({space:5}){
+          Text('去抢购')
+            .fontColor('#ff4714')
+            .fontSize(12)
+          Image($r('sys.media.ohos_ic_public_arrow_right'))
+            .width(14)
+            .height(14)
+            .fillColor('#fff')
+            .backgroundColor('#ff4714')
+            .borderRadius(8)
+        }
+        .padding({
+          top:3,
+          bottom:3,
+          left:6,
+          right:6
+        })
+        .borderRadius(10)
+        .backgroundColor('#fff')
+      }
+      .alignItems(HorizontalAlign.Start)
+
+      Row({space: 12}){
+        Column({space:6}){
+          Image($r('app.media.01'))
+            .width(50)
+            .height(50)
+          Text('￥2.01')
+            .fontSize(14)
+            .fontColor('#ff4714')
+        }
+        Column({space:6}){
+          Image($r('app.media.02'))
+            .width(50)
+            .height(50)
+          Text('￥59.9')
+            .fontSize(14)
+            .fontColor('#ff4714')
+        }
+        Column({space:6}){
+          Image($r('app.media.03'))
+            .width(50)
+            .height(50)
+          Text('￥39.8')
+            .fontSize(14)
+            .fontColor('#ff4714')
+        }
+        Column({space:6}){
+          Image($r('app.media.04'))
+            .width(50)
+            .height(50)
+          Text('￥1.99')
+            .fontSize(14)
+            .fontColor('#ff4714')
+        }
+      }
+      .padding({
+        top:10,
+        bottom:10
+      })
+      .justifyContent(FlexAlign.SpaceAround)
+      .layoutWeight(1)
+      .margin({
+        top:2,
+        bottom:2,
+        left: 5,
+        right:2
+      })
+      .backgroundColor('#fff')
+      .borderRadius(15)
+    }
+    .width('100%')
+    .padding({
+      left: 6
+    })
+    .backgroundImage($r('app.media.BgMiaosha'))
+    .backgroundImageSize(3)
+    .borderRadius(16)
+    .margin({bottom: 12})
+    .justifyContent(FlexAlign.SpaceBetween)
+    .backgroundColor('#fff')
+  }
+}
+export default miaoSha;
